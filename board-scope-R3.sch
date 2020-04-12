@@ -16198,10 +16198,6 @@ LED</description>
 </net>
 <net name="BM_TDI" class="0">
 <segment>
-<pinref part="IC3" gate="MCU" pin="PA15"/>
-<wire x1="132.08" y1="154.94" x2="148.59" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="TDI"/>
 <wire x1="350.52" y1="238.76" x2="340.36" y2="238.76" width="0.1524" layer="91"/>
 <label x="340.36" y="238.76" size="1.778" layer="95"/>

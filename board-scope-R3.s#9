@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15489,7 +15489,6 @@ LED</description>
 <part name="C603" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="10nF"/>
 <part name="+3V13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="VCC4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCINT" device=""/>
 <part name="R11" library="mylib" deviceset="CTS742C163" device="" value="330"/>
 <part name="B8" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1"/>
 <part name="B9" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1"/>
@@ -15503,6 +15502,7 @@ LED</description>
 <part name="S1" library="mylib" deviceset="MOMENTARY-SWITCH-SPST-2" device="-SMD-5.2MM"/>
 <part name="S3" library="mylib" deviceset="MOMENTARY-SWITCH-SPST-2" device="-SMD-5.2MM"/>
 <part name="SUPPLY33" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="+3V14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15812,7 +15812,6 @@ LED</description>
 <segment>
 <pinref part="IC3" gate="MCU" pin="PA15"/>
 <wire x1="132.08" y1="154.94" x2="148.59" y2="154.94" width="0.1524" layer="91"/>
-<label x="133.35" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="TDI"/>
@@ -15986,7 +15985,6 @@ LED</description>
 <instance part="C603" gate="G$1" x="48.26" y="172.72"/>
 <instance part="+3V13" gate="G$1" x="17.78" y="182.88"/>
 <instance part="SUPPLY16" gate="GND" x="179.07" y="71.12"/>
-<instance part="VCC4" gate="G$1" x="217.17" y="101.6"/>
 <instance part="R11" gate="G$1" x="318.77" y="113.03"/>
 <instance part="B8" gate="G$1" x="302.26" y="138.43" rot="R270"/>
 <instance part="B9" gate="G$1" x="302.26" y="130.81" rot="R270"/>
@@ -16000,6 +15998,7 @@ LED</description>
 <instance part="S1" gate="G$1" x="298.45" y="62.23"/>
 <instance part="S3" gate="G$1" x="298.45" y="49.53"/>
 <instance part="SUPPLY33" gate="GND" x="290.83" y="41.91"/>
+<instance part="+3V14" gate="G$1" x="217.17" y="104.14"/>
 </instances>
 <busses>
 </busses>
@@ -16274,12 +16273,6 @@ LED</description>
 <pinref part="U4" gate="G$1" pin="VCC"/>
 <wire x1="128.27" y1="207.01" x2="138.43" y2="207.01" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="U5" gate="G$1" pin="VCC"/>
-<wire x1="214.63" y1="88.9" x2="217.17" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="217.17" y1="88.9" x2="217.17" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="VCC4" gate="G$1" pin="VCCINT"/>
-</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -16309,6 +16302,12 @@ LED</description>
 <wire x1="139.7" y1="186.69" x2="160.02" y2="186.69" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="186.69" x2="160.02" y2="191.77" width="0.1524" layer="91"/>
 <junction x="160.02" y="191.77"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="VCC"/>
+<wire x1="214.63" y1="88.9" x2="217.17" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="217.17" y1="88.9" x2="217.17" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="+3V14" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="N$1" class="0">
