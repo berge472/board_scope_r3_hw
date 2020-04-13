@@ -15667,7 +15667,7 @@ LED</description>
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device="" value="test"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="U2" library="mylib" deviceset="TUSB8020B" device=""/>
@@ -15868,7 +15868,7 @@ LED</description>
 <part name="SUPPLY50" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="S2" library="mylib" deviceset="MOMENTARY-SWITCH-SPST-2" device="-SMD-5.2MM"/>
 <part name="SUPPLY51" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2"/>
+<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
 <part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
 <part name="+3V20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -15882,6 +15882,7 @@ LED</description>
 <part name="SUPPLY55" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="V_USB" device=""/>
 <part name="SUPPLY56" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY57" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY33" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="V_USB" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16165,13 +16166,6 @@ LED</description>
 <wire x1="86.36" y1="142.24" x2="44.45" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BM_TDO" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="TDO"/>
-<wire x1="350.52" y1="218.44" x2="340.36" y2="218.44" width="0.1524" layer="91"/>
-<label x="340.36" y="218.44" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="BM_TMS" class="0">
 <segment>
 <pinref part="IC3" gate="MCU" pin="PA13"/>
@@ -16196,25 +16190,12 @@ LED</description>
 <label x="340.36" y="228.6" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BM_TDI" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="TDI"/>
-<wire x1="350.52" y1="238.76" x2="340.36" y2="238.76" width="0.1524" layer="91"/>
-<label x="340.36" y="238.76" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="BM_TRGT_SWDIO_IN" class="0">
 <segment>
 <pinref part="IC3" gate="MCU" pin="PB12"/>
 <wire x1="132.08" y1="190.5" x2="170.18" y2="190.5" width="0.1524" layer="91"/>
 <label x="137.16" y="190.5" size="1.778" layer="95"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="IC3" gate="MCU" pin="PB1"/>
-<wire x1="132.08" y1="162.56" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BM_TX" class="0">
@@ -16229,13 +16210,6 @@ LED</description>
 <pinref part="IC3" gate="MCU" pin="PA3"/>
 <wire x1="132.08" y1="124.46" x2="143.51" y2="124.46" width="0.1524" layer="91"/>
 <label x="134.62" y="124.46" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="BM_LED0-1" class="0">
-<segment>
-<pinref part="IC3" gate="MCU" pin="PA9"/>
-<wire x1="132.08" y1="139.7" x2="148.59" y2="139.7" width="0.1524" layer="91"/>
-<label x="134.62" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -16255,12 +16229,6 @@ LED</description>
 <wire x1="132.08" y1="147.32" x2="143.51" y2="147.32" width="0.1524" layer="91"/>
 <label x="134.62" y="147.32" size="1.778" layer="95"/>
 <pinref part="IC3" gate="MCU" pin="PA12"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="RTCK"/>
-<wire x1="350.52" y1="203.2" x2="340.36" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BM_SCK" class="0">
@@ -16289,12 +16257,6 @@ LED</description>
 <pinref part="IC3" gate="MCU" pin="PB7"/>
 <wire x1="132.08" y1="177.8" x2="152.4" y2="177.8" width="0.1524" layer="91"/>
 <label x="134.62" y="177.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="IC3" gate="MCU" pin="PB9"/>
-<wire x1="132.08" y1="182.88" x2="152.4" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -16359,7 +16321,7 @@ LED</description>
 <instance part="C653" gate="G$1" x="50.8" y="46.99"/>
 <instance part="C655" gate="G$1" x="76.2" y="46.99"/>
 <instance part="C656" gate="G$1" x="86.36" y="46.99"/>
-<instance part="VCC1" gate="G$1" x="17.78" y="57.15"/>
+<instance part="VCC1" gate="G$1" x="17.78" y="59.69"/>
 <instance part="VCC3" gate="G$1" x="167.64" y="207.01"/>
 <instance part="D4" gate="G$1" x="177.8" y="184.15" rot="R180"/>
 <instance part="U4" gate="G$1" x="132.08" y="133.35"/>
@@ -16608,7 +16570,7 @@ LED</description>
 </segment>
 <segment>
 <pinref part="C650" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="54.61" x2="17.78" y2="52.07" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="57.15" x2="17.78" y2="52.07" width="0.1524" layer="91"/>
 <pinref part="C651" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="52.07" x2="17.78" y2="49.53" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="52.07" x2="27.94" y2="52.07" width="0.1524" layer="91"/>
@@ -16634,6 +16596,7 @@ LED</description>
 <wire x1="76.2" y1="52.07" x2="86.36" y2="52.07" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="52.07" x2="86.36" y2="49.53" width="0.1524" layer="91"/>
 <junction x="76.2" y="52.07"/>
+<pinref part="VCC1" gate="G$1" pin="VCCINT"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -16764,6 +16727,11 @@ LED</description>
 <pinref part="+3V24" gate="G$1" pin="+3V3"/>
 <wire x1="340.36" y1="179.07" x2="350.52" y2="179.07" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="179.07" x2="350.52" y2="186.69" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="+3V18" gate="G$1" pin="+3V3"/>
+<wire x1="255.27" y1="105.41" x2="255.27" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -17602,12 +17570,6 @@ LED</description>
 <label x="168.91" y="128.27" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$65" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="IOB_43_CBSEL1"/>
-<wire x1="106.68" y1="90.17" x2="92.71" y2="90.17" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 <sheet>
@@ -17630,6 +17592,8 @@ LED</description>
 <text x="312.42" y="142.24" size="1.778" layer="94">x</text>
 <text x="312.42" y="144.78" size="1.778" layer="94">x</text>
 <text x="312.42" y="147.32" size="1.778" layer="94">x</text>
+<text x="203.2" y="187.96" size="1.778" layer="94">x</text>
+<text x="203.2" y="185.42" size="1.778" layer="94">x</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -17722,6 +17686,7 @@ LED</description>
 <pinref part="U2" gate="G$1" pin="VDD33@1"/>
 <wire x1="248.92" y1="68.58" x2="243.84" y2="68.58" width="0.1524" layer="91"/>
 <junction x="243.84" y="68.58"/>
+<pinref part="U2" gate="G$1" pin="VDD33"/>
 <wire x1="248.92" y1="71.12" x2="243.84" y2="71.12" width="0.1524" layer="91"/>
 <junction x="243.84" y="71.12"/>
 </segment>
@@ -18517,6 +18482,7 @@ LED</description>
 <instance part="+3V20" gate="G$1" x="55.88" y="152.4"/>
 <instance part="R26" gate="G$1" x="45.72" y="142.24" rot="R90"/>
 <instance part="+3V21" gate="G$1" x="45.72" y="151.13"/>
+<instance part="SUPPLY33" gate="G$1" x="227.33" y="165.1"/>
 </instances>
 <busses>
 </busses>
@@ -18860,14 +18826,6 @@ LED</description>
 <label x="72.39" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VUSB_3.0" class="0">
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="227.33" y1="158.75" x2="227.33" y2="163.83" width="0.1524" layer="91"/>
-<wire x1="227.33" y1="163.83" x2="240.03" y2="163.83" width="0.1524" layer="91"/>
-<label x="229.87" y="163.83" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="FT_SIWU" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="!SIWU"/>
@@ -18884,13 +18842,6 @@ LED</description>
 <label x="64.77" y="132.08" size="1.778" layer="95"/>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="132.08" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="FT_WAKE" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="!WAKEUP"/>
-<wire x1="87.63" y1="129.54" x2="63.5" y2="129.54" width="0.1524" layer="91"/>
-<label x="66.04" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FT_VUSB_DET" class="0">
@@ -18966,6 +18917,13 @@ LED</description>
 <pinref part="U3" gate="G$1" pin="D-"/>
 <wire x1="115.57" y1="134.62" x2="127" y2="134.62" width="0.1524" layer="91"/>
 <label x="116.84" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="V_USB" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="227.33" y1="158.75" x2="227.33" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="SUPPLY33" gate="G$1" pin="V_USB"/>
 </segment>
 </net>
 </nets>
@@ -19386,12 +19344,6 @@ LED</description>
 <label x="325.12" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$58" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="B7"/>
-<wire x1="325.12" y1="91.44" x2="345.44" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="ICE_CRESET" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="B9"/>
@@ -19420,18 +19372,6 @@ LED</description>
 <label x="252.73" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$56" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="B15"/>
-<wire x1="276.86" y1="86.36" x2="287.02" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$60" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="B14"/>
-<wire x1="276.86" y1="91.44" x2="287.02" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="ICE_SS" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="B10"/>
@@ -19450,6 +19390,68 @@ LED</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,3,281.94,71.12,U2,VDD,VCCINT,,,"/>
+<approved hash="104,3,248.92,71.12,U2,VDD33,+3V3,,,"/>
+<approved hash="104,3,236.22,121.92,U2,USB_VBUS,N$63,,,"/>
+<approved hash="104,3,198.12,213.36,U1,VCC33,+3V3,,,"/>
+<approved hash="104,3,198.12,210.82,U1,VDD5,V_USB,,,"/>
+<approved hash="104,3,198.12,165.1,U1,EXP_PAD,GND,,,"/>
+<approved hash="104,1,86.36,127,IC3,VDDA,+3V3,,,"/>
+<approved hash="104,1,86.36,124.46,IC3,VSSA,GND,,,"/>
+<approved hash="104,1,86.36,129.54,IC3,VBAT,+3V3,,,"/>
+<approved hash="104,1,120.65,53.34,IC3PWR,VDD,+3V3,,,"/>
+<approved hash="104,1,156.21,53.34,IC3PWR,VSS,GND,,,"/>
+<approved hash="104,1,120.65,58.42,IC3PWR,VDD,+3V3,,,"/>
+<approved hash="104,1,156.21,58.42,IC3PWR,VSS,GND,,,"/>
+<approved hash="104,1,120.65,63.5,IC3PWR,VDD,+3V3,,,"/>
+<approved hash="104,1,156.21,63.5,IC3PWR,VSS,GND,,,"/>
+<approved hash="104,2,252.73,46.99,U5,VCC,+3V3,,,"/>
+<approved hash="104,2,157.48,181.61,U4,VCC_SPI,+3V3,,,"/>
+<approved hash="104,2,157.48,184.15,U4,VPP_2V5,N$1,,,"/>
+<approved hash="204,2,157.48,186.69,U4,VPP_FAST,,,,"/>
+<approved hash="104,2,157.48,189.23,U4,VCCIO_0,+3V3,,,"/>
+<approved hash="104,2,157.48,191.77,U4,VCCIO_1,+3V3,,,"/>
+<approved hash="104,2,157.48,194.31,U4,VCCIO_2,+3V3,,,"/>
+<approved hash="104,2,157.48,196.85,U4,VCCIO_3,+3V3,,,"/>
+<approved hash="104,2,157.48,199.39,U4,VCC,VCCINT,,,"/>
+<approved hash="209,3,152.4,205.74,N$11,,,,,"/>
+<approved hash="106,3,152.4,205.74,N$11,,,,,"/>
+<approved hash="209,3,152.4,203.2,N$12,,,,,"/>
+<approved hash="106,3,152.4,203.2,N$12,,,,,"/>
+<approved hash="106,3,236.22,106.68,N$18,,,,,"/>
+<approved hash="106,3,198.12,187.96,N$24,,,,,"/>
+<approved hash="106,3,198.12,198.12,N$38,,,,,"/>
+<approved hash="106,3,198.12,185.42,N$39,,,,,"/>
+<approved hash="106,3,236.22,104.14,N$40,,,,,"/>
+<approved hash="106,3,236.22,101.6,N$41,,,,,"/>
+<approved hash="106,3,236.22,99.06,N$42,,,,,"/>
+<approved hash="106,3,236.22,96.52,N$43,,,,,"/>
+<approved hash="106,3,236.22,93.98,N$44,,,,,"/>
+<approved hash="106,3,297.18,106.68,N$46,,,,,"/>
+<approved hash="106,3,297.18,104.14,N$47,,,,,"/>
+<approved hash="106,3,297.18,132.08,N$48,,,,,"/>
+<approved hash="106,3,297.18,129.54,N$49,,,,,"/>
+<approved hash="106,3,297.18,139.7,N$50,,,,,"/>
+<approved hash="106,3,297.18,142.24,N$51,,,,,"/>
+<approved hash="106,3,297.18,144.78,N$52,,,,,"/>
+<approved hash="106,3,297.18,147.32,N$53,,,,,"/>
+<approved hash="113,2,193.571,130.071,FRAME2,,,,,"/>
+<approved hash="113,3,193.571,130.071,FRAME3,,,,,"/>
+<approved hash="113,5,193.571,130.071,FRAME4,,,,,"/>
+<approved hash="113,4,193.571,130.071,FRAME5,,,,,"/>
+<approved hash="113,2,300.99,140.485,B8,,,,,"/>
+<approved hash="113,2,300.99,132.865,B9,,,,,"/>
+<approved hash="113,2,300.99,125.245,B10,,,,,"/>
+<approved hash="113,2,300.99,117.625,B11,,,,,"/>
+<approved hash="113,2,300.99,110.005,B12,,,,,"/>
+<approved hash="113,2,300.99,102.385,B13,,,,,"/>
+<approved hash="113,2,300.99,94.7649,B14,,,,,"/>
+<approved hash="113,2,300.99,85.8749,B15,,,,,"/>
+<approved hash="113,1,163.83,163.045,B1,,,,,"/>
+<approved hash="113,5,64.77,132.565,B2,,,,,"/>
+<approved hash="113,2,247.65,91.6534,S2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

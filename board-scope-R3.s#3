@@ -17170,12 +17170,6 @@ LED</description>
 <label x="92.71" y="166.37" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$74" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="IOL_1A"/>
-<wire x1="106.68" y1="168.91" x2="92.71" y2="168.91" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="FT_CLK" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="IOL_6B_GBIN7"/>
@@ -17448,12 +17442,22 @@ LED</description>
 <wire x1="322.58" y1="203.2" x2="314.96" y2="203.2" width="0.1524" layer="91"/>
 <label x="313.69" y="203.2" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOT_80"/>
+<wire x1="157.48" y1="138.43" x2="175.26" y2="138.43" width="0.1524" layer="91"/>
+<label x="168.91" y="138.43" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CH16" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="10"/>
 <wire x1="322.58" y1="205.74" x2="314.96" y2="205.74" width="0.1524" layer="91"/>
 <label x="313.69" y="205.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOT_82"/>
+<wire x1="157.48" y1="143.51" x2="175.26" y2="143.51" width="0.1524" layer="91"/>
+<label x="168.91" y="143.51" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH17" class="0">
@@ -17462,12 +17466,22 @@ LED</description>
 <wire x1="322.58" y1="208.28" x2="314.96" y2="208.28" width="0.1524" layer="91"/>
 <label x="313.69" y="208.28" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOT_85_GBIN0"/>
+<wire x1="157.48" y1="148.59" x2="175.26" y2="148.59" width="0.1524" layer="91"/>
+<label x="168.91" y="148.59" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CH18" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="14"/>
 <wire x1="322.58" y1="210.82" x2="314.96" y2="210.82" width="0.1524" layer="91"/>
 <label x="313.69" y="210.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOT_87"/>
+<wire x1="157.48" y1="153.67" x2="175.26" y2="153.67" width="0.1524" layer="91"/>
+<label x="168.91" y="153.67" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH19" class="0">
@@ -17476,12 +17490,22 @@ LED</description>
 <wire x1="322.58" y1="213.36" x2="314.96" y2="213.36" width="0.1524" layer="91"/>
 <label x="313.69" y="213.36" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOT_89"/>
+<wire x1="157.48" y1="158.75" x2="175.26" y2="158.75" width="0.1524" layer="91"/>
+<label x="168.91" y="158.75" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CH20" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="18"/>
 <wire x1="322.58" y1="215.9" x2="314.96" y2="215.9" width="0.1524" layer="91"/>
 <label x="313.69" y="215.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOT_91"/>
+<wire x1="157.48" y1="163.83" x2="175.26" y2="163.83" width="0.1524" layer="91"/>
+<label x="168.91" y="163.83" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH21" class="0">
@@ -17490,12 +17514,22 @@ LED</description>
 <wire x1="322.58" y1="218.44" x2="314.96" y2="218.44" width="0.1524" layer="91"/>
 <label x="313.69" y="218.44" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOT_95"/>
+<wire x1="157.48" y1="168.91" x2="175.26" y2="168.91" width="0.1524" layer="91"/>
+<label x="168.91" y="168.91" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CH22" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="22"/>
 <wire x1="322.58" y1="220.98" x2="314.96" y2="220.98" width="0.1524" layer="91"/>
 <label x="313.69" y="220.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOB_42_CBSEL0"/>
+<wire x1="106.68" y1="92.71" x2="92.71" y2="92.71" width="0.1524" layer="91"/>
+<label x="92.71" y="92.71" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH32" class="0">
@@ -17504,12 +17538,22 @@ LED</description>
 <wire x1="337.82" y1="220.98" x2="346.71" y2="220.98" width="0.1524" layer="91"/>
 <label x="340.36" y="220.98" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOL_1A"/>
+<wire x1="106.68" y1="168.91" x2="92.71" y2="168.91" width="0.1524" layer="91"/>
+<label x="92.71" y="168.91" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CH31" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="19"/>
 <wire x1="337.82" y1="218.44" x2="346.71" y2="218.44" width="0.1524" layer="91"/>
 <label x="340.36" y="218.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOT_93"/>
+<wire x1="157.48" y1="166.37" x2="175.26" y2="166.37" width="0.1524" layer="91"/>
+<label x="168.91" y="166.37" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH30" class="0">
@@ -17518,12 +17562,22 @@ LED</description>
 <wire x1="337.82" y1="215.9" x2="346.71" y2="215.9" width="0.1524" layer="91"/>
 <label x="340.36" y="215.9" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOT_90"/>
+<wire x1="157.48" y1="161.29" x2="175.26" y2="161.29" width="0.1524" layer="91"/>
+<label x="168.91" y="161.29" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CH29" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="15"/>
 <wire x1="337.82" y1="213.36" x2="346.71" y2="213.36" width="0.1524" layer="91"/>
 <label x="340.36" y="213.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOT_88"/>
+<wire x1="157.48" y1="156.21" x2="175.26" y2="156.21" width="0.1524" layer="91"/>
+<label x="168.91" y="156.21" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH28" class="0">
@@ -17532,12 +17586,22 @@ LED</description>
 <wire x1="337.82" y1="210.82" x2="346.71" y2="210.82" width="0.1524" layer="91"/>
 <label x="340.36" y="210.82" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOT_86"/>
+<wire x1="157.48" y1="151.13" x2="175.26" y2="151.13" width="0.1524" layer="91"/>
+<label x="168.91" y="151.13" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CH27" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="11"/>
 <wire x1="337.82" y1="208.28" x2="346.71" y2="208.28" width="0.1524" layer="91"/>
 <label x="340.36" y="208.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOT_84_GBIN1"/>
+<wire x1="157.48" y1="146.05" x2="175.26" y2="146.05" width="0.1524" layer="91"/>
+<label x="168.91" y="146.05" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH26" class="0">
@@ -17546,16 +17610,17 @@ LED</description>
 <wire x1="337.82" y1="205.74" x2="346.71" y2="205.74" width="0.1524" layer="91"/>
 <label x="340.36" y="205.74" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="IOT_81"/>
+<wire x1="157.48" y1="140.97" x2="175.26" y2="140.97" width="0.1524" layer="91"/>
+<label x="168.91" y="140.97" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CH25" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="7"/>
 <wire x1="337.82" y1="203.2" x2="346.71" y2="203.2" width="0.1524" layer="91"/>
 <label x="340.36" y="203.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="IOT_80"/>
-<wire x1="157.48" y1="138.43" x2="175.26" y2="138.43" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="IOT_79"/>
@@ -17587,40 +17652,10 @@ LED</description>
 <label x="168.91" y="128.27" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$66" class="0">
+<net name="N$65" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="IOT_81"/>
-<wire x1="157.48" y1="140.97" x2="175.26" y2="140.97" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$67" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="IOT_82"/>
-<wire x1="157.48" y1="143.51" x2="175.26" y2="143.51" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$68" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="IOT_84_GBIN1"/>
-<wire x1="157.48" y1="146.05" x2="175.26" y2="146.05" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$69" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="IOT_85_GBIN0"/>
-<wire x1="157.48" y1="148.59" x2="175.26" y2="148.59" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$70" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="IOT_86"/>
-<wire x1="157.48" y1="151.13" x2="175.26" y2="151.13" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$71" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="IOT_87"/>
-<wire x1="157.48" y1="153.67" x2="175.26" y2="153.67" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="IOB_43_CBSEL1"/>
+<wire x1="106.68" y1="90.17" x2="92.71" y2="90.17" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
