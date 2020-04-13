@@ -1,0 +1,11 @@
+G04 Gerber job file.*
+%TF.FileFunction,JobInfo*%
+%TF.GenerationSoftware,Autodesk,EAGLE,9.0.0*%
+%TF.CreationDate,2020-04-13T01:43:19Z*%
+%TF.Part,Single*%
+%MOMM*%
+%TJ.B_Owner,Jason Berger <berge472@gmail.com>*%
+%TJ.B_ID,board-scope-R3*%
+%TJ.B_LayerNum,4*%
+%TJ.B_Thickness,1.640844*%
+M02*
